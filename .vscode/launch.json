@@ -1,0 +1,17 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Run AutoServiceApp",
+      "type": "coreclr",
+      "request": "launch",
+      "preLaunchTask": "build-project",
+      "program": "${workspaceFolder}/bin/Debug/net10.0/AutoServiceApp.dll",
+      "args": [],
+      "cwd": "${workspaceFolder}",
+      "console": "internalConsole",
+      "stopAtEntry": false,
+      "justMyCode": true
+    }
+  ]
+}
