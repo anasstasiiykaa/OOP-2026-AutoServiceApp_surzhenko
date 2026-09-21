@@ -26,13 +26,12 @@ public class Car
             int currentYear = DateTime.Now.Year;
             if (value < 1886 || value > currentYear)
             {
-                Console.WriteLine($"[Помилка] Рік випуску ({value}) некоректний. Встановлено дефолтний: {currentYear}.");
-                _year = currentYear;
+                throw new ArgumentOutOfRangeException(
+                    nameof(value),
+                    $"Рік випуску ({value}) некоректний. Очікується діапазон від 1886 до {currentYear}."
+                );
             }
-            else
-            {
-                _year = value;
-            }
+            _year = value;
         }
     }
 

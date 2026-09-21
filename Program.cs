@@ -11,13 +11,12 @@ namespace AutoServiceApp
             var customer1 = new Customer("Олександр Коваленко");
             var customer2 = new Customer("Марія Бойко");
 
-            Console.WriteLine("Автомобілі:");
-            Console.WriteLine($"{car1.Brand} {car1.Model}, {car1.Year} рік");
-            Console.WriteLine($"{car2.Brand} {car2.Model}, {car2.Year} рік");
-
-            Console.WriteLine("\nВласники:");
+            Console.WriteLine("Власники та їхні автомобілі:");
             Console.WriteLine($"Власник: {customer1.Name}");
+            Console.WriteLine($"Автомобіль: {car1.Brand} {car1.Model}, {car1.Year} рік");
+            Console.WriteLine();
             Console.WriteLine($"Власник: {customer2.Name}");
+            Console.WriteLine($"Автомобіль: {car2.Brand} {car2.Model}, {car2.Year} рік");
 
             Console.WriteLine("\nСтан ремонту:");
             car1.StartRepair();
